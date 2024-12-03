@@ -1,0 +1,74 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FAFAFA">
+
+    <!-- Título do aplicativo -->
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Controle Financeiro"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:textColor="#3F51B5" />
+
+    <!-- Campo de entrada para o valor -->
+    <EditText
+        android:id="@+id/editTextValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o valor"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:textSize="16sp"
+        android:minHeight="48dp"/>
+
+    <!-- Spinner para categorias -->
+    <Spinner
+        android:id="@+id/spinnerCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_spinner"
+        android:minHeight="48dp" />
+
+    <!-- Botão de adicionar -->
+    <Button
+        android:id="@+id/buttonAdicionar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicionar"
+        android:textAllCaps="false"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF" />
+
+    <!-- Texto de total -->
+    <TextView
+        android:id="@+id/textViewTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total: R$ 0.00"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:textColor="#FF5722"
+        android:gravity="center" />
+
+    <!-- Lista de gastos -->
+    <ListView
+        android:id="@+id/listViewGastos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:dividerHeight="10dp"
+        android:elevation="50dp" />
+</LinearLayout>

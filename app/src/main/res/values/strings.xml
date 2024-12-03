@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ControleFinanceiro2</string>
+    <string name="total_format">Total: R$ %1$.2f</string>
+    <string name="error_empty_value">Por favor, insira um valor</string>
+    <string name="error_invalid_value">Por favor, insira um valor válido</string>
+</resources>
